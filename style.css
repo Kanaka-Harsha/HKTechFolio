@@ -1,0 +1,102 @@
+*
+{
+    font-family: "Audiowide", sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#head 
+{
+    height: 30%;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap:30px;
+}   
+#head h1
+{
+    font-size: 5rem;
+}
+
+#choiceContainer
+{
+    /* background-color: rgb(255, 0, 0); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+    height: 70%;
+    width: 100%;
+}
+
+.choiceBox
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:30px;
+}
+
+.choiceBox button
+{
+    background-color: black;
+    height:300px;
+    width:500px;
+    border-radius: 10px;
+    color:#f0f0f0;
+    box-shadow: 0 20px 80px rgba(0, 0, 0, 0.99);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out,  0.3s ease-in-out;
+}
+.choiceBox button:hover
+{
+    transform: scale(1.1);
+}
+
+.choiceBox a
+{
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+.choiceBox button p
+{
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.choiceBox button h1
+{
+    font-size: 4rem;
+}
+
+
+footer
+{
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: #fffcfc;
+    padding: 10px 0;
+}

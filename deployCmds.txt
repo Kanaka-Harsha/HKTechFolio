@@ -1,0 +1,7 @@
+Commands for Enabling Firebase on Powershell
+
+
+1.) cd “Location Of Index.html”
+2.) firebase login -> Yes -> Yes
+3.) firebase init hosting -> Yes -> Use Existing Project -> Select GCP project -> . -> Yes -> No 
+4.) firebase deploy

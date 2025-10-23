@@ -1,0 +1,14 @@
+body
+{
+    font-family: "Audiowide", sans-serif;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.tempDiv h1
+{
+    text-align: center;
+    margin-top: 40vh;
+}
