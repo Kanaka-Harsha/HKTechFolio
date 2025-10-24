@@ -908,8 +908,8 @@ footer
 
     /* Make nav links smaller */
     #nav ul li a {
-        padding: 10px;
-        font-size: 1rem;
+        padding: 5px;
+        font-size: 0.6rem;
     }
 
     .logo a {
@@ -919,7 +919,10 @@ footer
 
     /* Reduce font size in intro */
     .intro {
-        padding: 15px;
+        padding: 5px;
+    }
+    .intro h1, .intro h2 {
+        font-size: 1.9rem;
     }
 
     .intro p {
