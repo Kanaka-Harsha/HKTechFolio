@@ -497,18 +497,139 @@ body
 
 .contactContent
 {
-    background-color: #f17575;
+    /* background-color: #f17575; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap:20px;
-    height:500px;
+    height:550px;
     width:90%;
     /* max-height: 600px;
     max-width: 900px; */
     border-radius: 20px;
     flex-wrap: wrap;
+}
+
+#form
+{
+    /* background-color: rgb(255, 5, 5); */
+    padding:50px;
+    border-radius: 20px;
+    box-shadow: rgb(255, 255, 255) 0px 0px 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    width:400px;
+    height:500px;
+}
+#form input, #form textarea
+{
+    width:250px;
+    padding:10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+}
+#form button
+{
+    margin:20px;
+    width:300px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    font-size:1.2rem;
+    font-weight: 700;
+    padding:15px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    transition: background-color 0.5s ease-in-out,  0.3s ease-in-out;
+}
+
+#form button:hover
+{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+#socialMedia
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:20px;
+    height:550px;
+    width:50%;
+    /* background-color: aqua; */
+}
+#socialMedia h2
+{
+    font-size: 2.4rem;
+}
+#socialMedia p
+{
+    font-size: 1.2rem;
+    text-align: left;
+    width:80%;
+}
+#contentSM
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap:wrap;
+    gap: 10px;
+}
+#contentSM h2
+{
+    font-size: 1.2rem;
+    margin-bottom:10px;
+}
+.imgTxt
+{
+    display:flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: column;
+    gap:20px;
+    /* background-color: #000000; */
+    width:200px;
+
+}
+.imgTxt h1
+{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+
+.imgTxt img
+{
+    width:50px;
+    height:auto;
+    border-radius: 50%;
+    transition: background-color 0.2s ease-in-out,  0.2s ease-in-out;
+}
+
+#myInfo a
+{
+    text-decoration: none;
+    color: rgb(187, 252, 22);
+}
+#myInfo a:hover
+{
+    text-decoration: underline;
+}
+
+#socialMedia a img:hover
+{
+    scale:1.2;
+    box-shadow: rgb(255, 255, 255) 0px 0px 10px;
 }
 
 
