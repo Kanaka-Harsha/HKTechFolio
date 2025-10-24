@@ -100,3 +100,127 @@ footer
     color: #fffcfc;
     padding: 10px 0;
 }
+
+/* ==============================================
+   START: RESPONSIVE DESIGN CODE (for Choice Page)
+   Paste this entire block at the end of your CSS file.
+   ============================================== */
+
+/* ========== Tablets (width ≤ 1024px) ========== */
+/* On a tablet, the two 500px buttons are too wide */
+@media (max-width: 1024px) {
+
+    /* Allow the body to grow and scroll if needed */
+    body {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    /* Stack the two choice boxes vertically */
+    #choiceContainer {
+        flex-direction: column;
+        height: auto; /* Remove the 70% height */
+        padding: 40px 0; /* Add vertical padding */
+        gap: 40px;
+    }
+
+    /* Let the head section's height be automatic */
+    #head {
+        height: auto;
+        padding: 40px 10px; /* Add padding instead of fixed height */
+    }
+
+    /* Make the buttons a bit smaller */
+    .choiceBox button {
+        width: 450px;
+        height: 250px;
+    }
+}
+
+
+/* ========== Mobile devices (width ≤ 768px) ========== */
+/* On a phone, we need to shrink text and make buttons fit */
+@media (max-width: 768px) {
+
+    body {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    /* Reduce the gap between stacked buttons */
+    #choiceContainer {
+        gap: 30px;
+        padding: 30px 0;
+    }
+
+    /* Reduce padding and gap for the header */
+    #head {
+        padding: 30px 10px;
+        gap: 20px;
+    }
+
+    /* --- This is the most important part! --- */
+
+    /* 1. Make the main title smaller */
+    #head h1 {
+        font-size: 3rem; 
+    }
+
+    /* 2. Make the subtitle smaller */
+    #head h2 {
+        font-size: 1.2rem;
+    }
+
+    /* 3. Make the buttons fit the screen! */
+    .choiceBox button {
+        width: 90vw;        /* Make it 90% of the viewport width */
+        max-width: 400px;   /* But don't let it get *too* wide */
+        height: auto;       /* Let the content define the height */
+        padding: 40px 20px; /* Use padding for spacing */
+        font-size: 1.5rem;  /* Reduce base font size */
+    }
+
+    /* 4. Make the button's title smaller */
+    .choiceBox button h1 {
+        font-size: 2.5rem;
+    }
+
+    /* 5. Make the button's paragraph smaller */
+    .choiceBox button p {
+        font-size: 1rem;
+    }
+
+    /* Make the hover effect less dramatic */
+    .choiceBox button:hover {
+        transform: scale(1.05);
+    }
+}
+
+
+/* ========== Small mobile (width ≤ 480px) ========== */
+/* Final tweaks for the smallest screens */
+@media (max-width: 480px) {
+    
+    #head h1 {
+        font-size: 2.2rem; /* Even smaller title */
+    }
+
+    #head h2 {
+        font-size: 1rem; /* Even smaller subtitle */
+    }
+
+    .choiceBox button {
+        padding: 30px 15px; /* Tighter padding */
+    }
+
+    .choiceBox button h1 {
+        font-size: 2rem; /* Smaller button title */
+    }
+
+    .choiceBox button p {
+        font-size: 0.9rem; /* Smaller button text */
+    }
+}
+/* ==============================================
+   END: RESPONSIVE DESIGN CODE
+   ============================================== */

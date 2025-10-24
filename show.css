@@ -322,12 +322,14 @@ body
 {
     background-color: rgb(0, 0, 0);
     min-height:100vh;
+    max-height:auto;
     margin:auto;
     border: 5px solid white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap:20px;
 }
 .skillsContent 
@@ -339,7 +341,6 @@ body
     flex-direction: row;
     gap:20px;
     height:600px;
-    max-height: 800px;
     max-width: 900px;
     border-radius: 20px;
     flex-wrap: wrap;
@@ -665,11 +666,16 @@ footer
     transform: translateY(0);
 }
 
+/* ==============================================
+   START: RESPONSIVE DESIGN CODE
+   Paste this entire block at the end of your CSS file.
+   ============================================== */
 
-/* ========== RESPONSIVE DESIGN ========== */
-
-/* Tablets (width ≤ 1024px) */
+/* ========== Tablets (width ≤ 1024px) ========== */
+/* Rules for "living room" sized screens */
 @media (max-width: 1024px) {
+    
+    /* Make the navbar stack vertically to save space */
     #nav {
         flex-direction: column;
         height: auto;
@@ -681,40 +687,76 @@ footer
         justify-content: center;
     }
 
+    /* Make the intro text box a bit smaller */
     .intro {
         padding: 40px;
-        font-size: 1rem;
     }
 
+    /* Make your profile picture a bit smaller */
     .introImg img {
         max-width: 250px;
     }
 
+    /* Allow the skills container to resize its height */
     .skillsContent {
-        flex-direction: row;
-        flex-wrap: wrap;
         height: auto;
+        padding: 20px; /* Add some padding */
     }
 
+    /* Adjust skill boxes for a 3-across layout */
     .Myskills {
-        width: 180px;
-        height: 140px;
-        font-size: 1rem;
+        width: 220px;
+        height: 160px;
     }
 
+    /* Make project boxes fit better */
     .projectBox {
         width: 95%;
+        height: auto; /* Allow height to adjust */
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .plText {
+        height: auto; /* Allow height to adjust */
+    }
+
+    /* Make contact form and social media sections wider */
+    .contactContent {
+        height: auto; /* Remove fixed height */
+        padding: 20px;
+    }
+
+    #form {
+        width: 90%;
+        max-width: 400px; /* Keep its max size */
         height: auto;
+    }
+
+    #socialMedia {
+        width: 90%;
+        max-width: 600px; /* Let it be a bit wider */
+        height: auto;
+    }
+
+    #socialMedia h2 {
+        font-size: 2rem;
     }
 }
 
-/* Mobile devices (width ≤ 768px) */
+
+/* ========== Mobile devices (width ≤ 768px) ========== */
+/* This is the big one! Rules for "closet" sized screens */
 @media (max-width: 768px) {
+
+    /* Stack the Home section vertically */
     #Home {
         flex-direction: column;
         text-align: center;
+        padding: 40px 5%; /* Add padding for top/bottom */
     }
 
+    /* Center-align the headings in the Home section */
     #Home h1, #Home h2 {
         flex-basis: 100%;
         text-align: center;
@@ -722,35 +764,45 @@ footer
 
     .intro {
         padding: 20px;
-        font-size: 0.9rem;
+        text-align: center;
     }
 
+    /* Make your picture smaller and add space above it */
     .introImg img {
         max-width: 200px;
         margin-top: 20px;
     }
 
+    /* Stack and center the "Hire Me" button */
     .hire {
         flex-direction: column;
         justify-content: center;
     }
 
+    /* Make the About Me text smaller and container wider */
     #About .content {
         font-size: 1.2rem;
         width: 95%;
         padding: 15px;
     }
 
+    /* Stack the skills vertically */
     .skillsContent {
         flex-direction: column;
         gap: 15px;
-    }
-
-    .Myskills {
         width: 90%;
-        max-width: 300px;
     }
 
+    /* Make each skill box take up most of the width */
+    .Myskills {
+        width: 100%;
+        max-width: 300px; /* But not *too* wide */
+        height: auto;
+        padding: 15px;
+    }
+    
+    /* --- This is the fix for your Projects section --- */
+    
     #Projects {
         padding: 20px 10px;
     }
@@ -759,14 +811,102 @@ footer
         width: 100%;
     }
 
+    /* Stack the project text and image vertically */
+    .projectBox {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        height: auto;
+        margin-bottom: 30px;
+        padding: 10px;
+    }
+
+    /* This is the magic for your zigzag layout! */
+    /* It flips the 2nd and 4th projects */
+    .projectBox:nth-child(even) {
+        flex-direction: column-reverse; /* Reverses the stack order */
+    }
+
+    /* Let the text box take the full width */
+    .plText {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .plText p {
+        text-align: justify;
+    }
+
+    /* Control the image size on mobile */
+    .projectBox img {
+        max-width: 200px;
+        height: auto;
+        width: 100%;
+    }
+    
+    /* --- This is the fix for your Contact section --- */
+
+    /* Ensure content stacks and has no fixed height */
+    .contactContent {
+        flex-direction: column; 
+        height: auto;
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    /* Make form take full width and auto height */
+    #form {
+        width: 90%;
+        max-width: 500px;
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    /* Make form inputs and buttons take full width */
+    #form input,
+    #form button {
+        width: 100%;
+    }
+
+    /* Make social media section take full width and auto height */
+    #socialMedia {
+        width: 90%;
+        max-width: 500px;
+        height: auto;
+        text-align: center;
+    }
+
+    #socialMedia h2 {
+        font-size: 1.8rem;
+    }
+
+    /* Center your personal info */
+    #myInfo p {
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Adjust social media icons for 3-across layout */
+    .imgTxt {
+        width: 30%;
+        min-width: 120px;
+    }
+    
+    /* Adjust footer text */
     footer {
         font-size: 0.7rem;
         height: 40px;
+        padding: 0 10px;
     }
 }
 
-/* Small mobile (width ≤ 480px) */
+
+/* ========== Small mobile (width ≤ 480px) ========== */
+/* Final tweaks for the smallest screens */
 @media (max-width: 480px) {
+
+    /* Make nav links smaller */
     #nav ul li a {
         padding: 10px;
         font-size: 1rem;
@@ -777,6 +917,7 @@ footer
         padding-left: 10px;
     }
 
+    /* Reduce font size in intro */
     .intro {
         padding: 15px;
     }
@@ -785,13 +926,18 @@ footer
         font-size: 0.9rem;
     }
 
+    /* Reduce font size on button */
     .hire button {
         font-size: 1rem;
         padding: 10px;
     }
+    
+    #About .content {
+        font-size: 1rem;
+    }
 
+    /* Further reduce skill box text and image */
     .Myskills {
-        width: 100%;
         font-size: 0.9rem;
         padding: 10px;
     }
@@ -800,7 +946,34 @@ footer
         width: 50px;
     }
 
+    /* Reduce project text size */
+    .plText h1 {
+        font-size: 1.4rem;
+    }
+    .plText p {
+        font-size: 0.9rem;
+        margin: 10px;
+    }
+
+    /* Reduce contact form padding */
+    #form {
+        padding: 20px 15px;
+    }
+
+    #socialMedia h2 {
+        font-size: 1.5rem;
+    }
+    
+    /* Adjust social media icons for 2-across layout */
+    .imgTxt {
+        width: 45%;
+        min-width: 120px;
+    }
+
     footer {
         font-size: 0.6rem;
     }
 }
+/* ==============================================
+   END: RESPONSIVE DESIGN CODE
+   ============================================== */
