@@ -591,6 +591,9 @@ body
     max-width: 900px; */
     border-radius: 20px;
     flex-wrap: wrap;
+    animation:fadeup 1s linear;
+    animation-timeline:view();
+    animation-range: entry 0% cover 40%;
 }
 
 #form
@@ -606,6 +609,9 @@ body
     gap:20px;
     width:400px;
     height:500px;
+    animation:fadeup 1s linear;
+    animation-timeline:view();
+    animation-range: entry 0% cover 40%;
 }
 #form input, #form textarea
 {
@@ -629,6 +635,9 @@ body
     background-color: rgb(255, 255, 255);
     color:rgb(0, 0, 0);
     transition: background-color 0.5s ease-in-out,  0.3s ease-in-out;
+    animation:fadeup 1s linear;
+    animation-timeline:view();
+    animation-range: entry 0% cover 40%;
 }
 
 #form button:hover
@@ -647,6 +656,9 @@ body
     height:550px;
     width:50%;
     /* background-color: aqua; */
+    animation:fadeup 1s linear;
+    animation-timeline:view();
+    animation-range: entry 0% cover 40%;
 }
 #socialMedia h2
 {
@@ -681,7 +693,9 @@ body
     gap:20px;
     /* background-color: #000000; */
     width:200px;
-
+    animation:fadeup 1s linear;
+    animation-timeline:view();
+    animation-range: entry 0% cover 40%;
 }
 .imgTxt h1
 {
@@ -696,6 +710,9 @@ body
     height:auto;
     border-radius: 50%;
     transition: background-color 0.2s ease-in-out,  0.2s ease-in-out;
+    animation:fadeup 1s linear;
+    animation-timeline:view();
+    animation-range: entry 0% cover 40%;
 }
 
 #myInfo a
@@ -806,18 +823,27 @@ footer
     .contactContent {
         height: auto; /* Remove fixed height */
         padding: 20px;
+        animation:fadeup 1s linear;
+        animation-timeline:view();
+        animation-range: entry 0% cover 40%;
     }
 
     #form {
         width: 90%;
         max-width: 400px; /* Keep its max size */
         height: auto;
+        animation:fadeup 1s linear;
+        animation-timeline:view();
+        animation-range: entry 0% cover 40%;
     }
 
     #socialMedia {
         width: 90%;
         max-width: 600px; /* Let it be a bit wider */
         height: auto;
+        animation:fadeup 1s linear;
+        animation-timeline:view();
+        animation-range: entry 0% cover 40%;
     }
 
     #socialMedia h2 {
@@ -934,6 +960,9 @@ footer
         height: auto;
         width: 100%;
         padding: 20px 10px;
+        animation:fadeup 1s linear;
+        animation-timeline:view();
+        animation-range: entry 0% cover 40%;
     }
 
     /* Make form take full width and auto height */
@@ -942,6 +971,9 @@ footer
         max-width: 500px;
         height: auto;
         padding: 30px 20px;
+        animation:fadeup 1s linear;
+        animation-timeline:view();
+        animation-range: entry 0% cover 40%;
     }
 
     /* Make form inputs and buttons take full width */
@@ -956,6 +988,9 @@ footer
         max-width: 500px;
         height: auto;
         text-align: center;
+        animation:fadeup 1s linear;
+        animation-timeline:view();
+        animation-range: entry 0% cover 40%;
     }
 
     #socialMedia h2 {
@@ -972,6 +1007,9 @@ footer
     .imgTxt {
         width: 30%;
         min-width: 120px;
+        animation:fadeup 1s linear;
+        animation-timeline:view();
+        animation-range: entry 0% cover 40%;
     }
     
     /* Adjust footer text */
@@ -1058,6 +1096,9 @@ footer
     .imgTxt {
         width: 45%;
         min-width: 120px;
+        animation:fadeup 1s linear;
+        animation-timeline:view();
+        animation-range: entry 0% cover 40%;
     }
 
     footer {
