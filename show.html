@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HQBSH1RN50"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-HQBSH1RN50');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HKTechFolio</title>
     <link rel="stylesheet" href="show.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+
 </head>
 <body>
     
@@ -193,12 +203,72 @@
 
         <div class="heading"><h1>Contact Me</h1></div>
         <div class="contactContent">
-            hi
+            <div id="form">
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <br>
+                    <button>Submit</button>
+                </form>
+            </div>
+            <div id="socialMedia">
+                <h2>Connect with me on:</h2>
+                <div id="contentSM">
+                    <div class="imgTxt">
+                        <h1>LinkedIn</h1>
+                        <a href="https://www.linkedin.com/in/harsha-kanaka" target="_blank">
+                            <img src="images/linkedin.png" alt="LinkedIn">
+                        </a>
+                    </div>
+                    <div class="imgTxt">
+                        <h1>WhatsApp</h1>
+                        <a href="https://wa.me/+919963481721" target="_blank">
+                            <img src="images/whatsapp.png" alt="WhatsApp">
+                        </a>
+                    </div>
+                    <div class="imgTxt">
+                        <h1>GitHub</h1>
+                        <a href="https://github.com/Kanaka-Harsha" target="_blank">
+                            <img src="images/github.png" alt="GitHub">
+                        </a>
+                    </div>
+                    <div class="imgTxt">
+                        <h1>Instagram</h1>
+                        <a href="https://www.instagram.com/harsha.k.01/" target="_blank">
+                            <img src="images/instagram.png" alt="Instagram">
+                        </a>
+                    </div>
+                    <div class="imgTxt">
+                        <h1>Twitter/X</h1>
+                        <a href="https://x.com/aka_Deadshot203" target="_blank">
+                            <img src="images/twitter.png" alt="Twitter">
+                        </a>
+                    </div>
+                    <div class="imgTxt">
+                        <h1>Facebook</h1>
+                        <a href="https://www.facebook.com/harsha.kanakadandila.3" target="_blank">
+                            <img src="images/facebook.png" alt="Facebook">
+                        </a>
+                    </div>
+                </div>
+                <div id="myInfo">
+                    <h2>Or Reach Me Directly At:</h2>
+                    <p>Email:<a href="mailto:harshakanakadandila@gmail.com">harshakanakadandila@gmail.com</a></p>
+                    <p>Phone:<a href="tel:+919963481721">+91 99634 81721</a></p>
+                </div>
+            </div>
+
+            
         </div>
     </div>
 
     <footer>Copyright © | Harsha Kanakadandila | All Rights Reserved</footer>
 
     <script src="script.js"></script>
+
 </body>
 </html>
