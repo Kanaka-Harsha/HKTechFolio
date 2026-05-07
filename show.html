@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HK.Tech.Folio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@300;400;700&family=JetBrains+Mono&family=Outfit:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="show.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
+    <meta name="description" content="Cloud Engineer and IoT Architect specializing in AWS, serverless systems, edge computing, and distributed architectures.">
+    <title>Harsha Kanakadandila | Cloud & IoT Engineer</title>
   </head>
   <body>
     <div class="cloud c1"></div>
@@ -23,17 +25,19 @@
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#extracurriculars">Extra Curriculars</a></li>
           <li><a href="#certifications">Certificates</a></li>
           <li><a href="chat/chat.html">Chat</a></li>
           <li><a href="#contact">Contact</a></li>
           <li class="social-nav">
-            <a href="https://github.com/Kanaka-Harsha" target="_blank"
+            <a href="https://github.com/Kanaka-Harsha" target="_blank" aria-label="GitHub Profile"
               ><i class="fab fa-github"></i
             ></a>
-            <a href="https://linkedin.com/in/harsha-kanaka" target="_blank"
+            <a href="https://linkedin.com/in/harsha-kanaka" target="_blank" aria-label="LinkedIn Profile"
               ><i class="fab fa-linkedin"></i
             ></a>
-            <a href="https://www.instagram.com/harsha.k.01/" target="_blank"
+            <a href="https://www.instagram.com/harsha.k.01/" target="_blank" aria-label="Instagram Profile"
               ><i class="fab fa-instagram"></i
             ></a>
           </li>
@@ -65,7 +69,7 @@
         </div>
       </div>
       <div class="hero-image">
-        <img fetchpriority="high" decoding="async" src="images/my.png" alt="Harsha Kanakadandila" />
+        <img fetchpriority="high" decoding="async" src="images/my.webp" alt="Harsha Kanakadandila" />
       </div>
     </section>
 
@@ -147,8 +151,8 @@
             class="card-image-carousel"
             title="Scroll horizontally for more images"
           >
-            <img loading="lazy" decoding="async" src="images/archi.jpg" alt="Pay-As-You-Store Architecture" />
-            <img loading="lazy" decoding="async" src="images/proja1.png" alt="Pay-As-You-Store Interface" />
+            <img loading="lazy" decoding="async" src="images/archi.webp" alt="Pay-As-You-Store Architecture" />
+            <img loading="lazy" decoding="async" src="images/proja1.webp" alt="Pay-As-You-Store Interface" />
           </div>
           <div class="card-content">
             <h3>H-Drive: Pay-As-You-Store</h3>
@@ -177,7 +181,7 @@
             class="card-image-carousel"
             title="Scroll horizontally for more images"
           >
-            <img loading="lazy" decoding="async" src="images/proj1.png" alt="Smart Attendance System" />
+            <img loading="lazy" decoding="async" src="images/proj1.webp" alt="Smart Attendance System" />
           </div>
           <div class="card-content">
             <h3>Smart Attendance System</h3>
@@ -209,7 +213,7 @@
             class="card-image-carousel"
             title="Scroll horizontally for more images"
           >
-            <img loading="lazy" decoding="async" src="images/traffic.png" alt="Smart Traffic Monitoring" />
+            <img loading="lazy" decoding="async" src="images/traffic.webp" alt="Smart Traffic Monitoring" />
           </div>
           <div class="card-content">
             <h3>Smart Traffic Monitoring</h3>
@@ -240,7 +244,7 @@
             class="card-image-carousel"
             title="Scroll horizontally for more images"
           >
-            <img loading="lazy" decoding="async" src="images/mirror.png" alt="Smart Mirror Interface" />
+            <img loading="lazy" decoding="async" src="images/mirror.webp" alt="Smart Mirror Interface" />
           </div>
           <div class="card-content">
             <h3>Smart Mirror</h3>
@@ -266,6 +270,44 @@
         </div>
       </div>
     </section>
+    <!-- Experience Section -->
+    <section id="experience" class="reveal">
+      <h2 class="section-title">Experience</h2>
+      <div class="grid-container">
+        <div class="cert-card" style="border-left: 4px solid var(--secondary-glow);">
+          <div class="card-content">
+            <h3 style="color: var(--secondary-glow); margin-bottom: 5px;"><i class="fas fa-laptop-code"></i> IoT Intern</h3>
+            <p style="letter-spacing: 3px; color: #fff; font-family: var(--font-alt); margin-bottom: 15px; font-weight: bold;">TokaiEbi Technologies</p>
+            <ul class="project-points">
+              <li>Designed and deployed a cloud-centric IoT automation platform on AWS for a live Recirculating Aquaculture System (RAS), focusing on high availability, fault tolerance, and production reliability.</li>
+              <li>Architected MQTT-based device communication using AWS IoT Core, enabling real-time data transfer, remote device control, and automated actuation.</li>
+              <li>Built a serverless data transfer, validation, and alerting pipeline using AWS Lambda, Python, and DynamoDB to detect sensor anomalies, offline devices, and missing telemetry.</li>
+              <li>Implemented real-time alerting workflows that pushed critical events to the frontend UI and external notification channels, ensuring rapid operational response.</li>
+              <li>Designed an AWS S3-based media transfer pipeline for CCTV footage captured at the edge, supporting durable storage and downstream analysis.</li>
+              <li>Integrated AWS CloudFront to improve frontend performance, reduce latency, and increase global availability of the web application.</li>
+              <li>Enhanced the web platform by implementing cloud-driven real-time alerts, improving responsiveness, and converting it into a Progressive Web App (PWA).</li>
+              <li>Integrated Telegram notifications triggered by AWS backend events for immediate visibility of critical system failures.</li>
+              <li>Developed and integrated ESP32 and Raspberry Pi edge devices, interfacing with industrial-grade sensors and smart plugs for reliable data acquisition.</li>
+              <li>Configured Raspberry Pi CronJobs for RTSP camera capture and resilient uploads to S3, isolating individual camera failures to prevent system-wide disruptions.</li>
+              <li>Implemented network resilience strategies for headless edge nodes, including backup WiFi configurations for remote recovery.</li>
+            </ul>
+            <div class="tech-stack" style="margin-top: 15px;">
+              <span class="tech-tag">AWS IoT Core</span>
+              <span class="tech-tag">AWS Lambda</span>
+              <span class="tech-tag">DynamoDB</span>
+              <span class="tech-tag">S3</span>
+              <span class="tech-tag">CloudFront</span>
+              <span class="tech-tag">ESP32</span>
+              <span class="tech-tag">Raspberry Pi</span>
+              <span class="tech-tag">MQTT</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">React.js</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <!-- Certifications Section -->
     <section id="certifications" class="reveal">
@@ -273,7 +315,7 @@
       <div class="grid-container">
         <div class="cert-card">
           <div class="card-image">
-            <img loading="lazy" decoding="async" src="images/gcp.png" alt="Google Cloud Associate" />
+            <img loading="lazy" decoding="async" src="images/gcp.webp" alt="Google Cloud Associate" />
           </div>
           <div class="card-content">
             <h3>Google Cloud Associate</h3>
@@ -286,7 +328,7 @@
         <div class="cert-card">
           <div class="card-image">
             <div class="ribbon">In Progress</div>
-            <!-- <img loading="lazy" decoding="async" src="images/cert2.png"/> -->
+            <!-- <img loading="lazy" decoding="async" src="images/cert2.webp"/> -->
           </div>
           <div class="card-content">
             <h3>AWS Solutions Architect</h3>
@@ -298,7 +340,7 @@
         </div>
         <div class="cert-card">
           <div class="card-image">
-            <img loading="lazy" decoding="async" src="images/awscp.png" alt="AWS Cloud Practitioner" />
+            <img loading="lazy" decoding="async" src="images/awscp.webp" alt="AWS Cloud Practitioner" />
           </div>
           <div class="card-content">
             <h3>AWS Cloud Practitioner</h3>
@@ -306,6 +348,34 @@
               Foundational understanding of the AWS Cloud platform, security,
               and compliance.
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Extracurriculars Section -->
+    <section id="extracurriculars" class="reveal">
+      <h2 class="section-title">Extra Curriculars</h2>
+      <div class="grid-container">
+        <div class="cert-card" style="border-left: 4px solid var(--primary-glow);">
+          <div class="card-content">
+            <h3 style="color: var(--primary-glow); margin-bottom: 5px;"><i class="fas fa-users"></i> Tech Lead / Member</h3>
+            <p style="letter-spacing: 3px; color: #fff; font-family: var(--font-alt); margin-bottom: 10px; font-weight: bold;">@Connect Student Club</p>
+            <p>Mentored student teams on projects by eliminating the technical bottlenecks and helped organize department-level technical events.</p>
+          </div>
+        </div>
+        <div class="cert-card" style="border-left: 4px solid var(--primary-glow);">
+          <div class="card-content">
+            <h3 style="color: var(--primary-glow); margin-bottom: 5px;"><i class="fas fa-medal"></i> Cricket Player</h3>
+            <p style="letter-spacing: 3px; color: #fff; font-family: var(--font-alt); margin-bottom: 10px; font-weight: bold;">Sports Participation</p>
+            <p>Won a championship and secured a runner-up title representing the university cricket team in inter-college tournaments, demonstrating teamwork, strategy, and a strong competitive spirit.</p>
+          </div>
+        </div>
+        <div class="cert-card" style="border-left: 4px solid var(--primary-glow);">
+          <div class="card-content">
+            <h3 style="color: var(--primary-glow); margin-bottom: 5px;"><i class="fas fa-gamepad"></i> Esports Competitor</h3>
+            <p style="letter-spacing: 3px; color: #fff; font-family: var(--font-alt); margin-bottom: 10px; font-weight: bold;">Competitive Gaming</p>
+            <p>Participated in structured esports competitions, showcasing quick decision-making and high-level team coordination.</p>
           </div>
         </div>
       </div>
@@ -332,8 +402,8 @@
         <div class="contact-info">
           <a href="mailto:harshakanakadandila@gmail.com" class="contact-card">
             <i class="fas fa-envelope"></i>
-            <p>Email</p>
-            <span class="contact-data">harshakanakadandila@gmail.com</span>
+            <p>Email Me</p>
+            <span class="contact-data">Click to send email</span>
           </a>
         </div>
         <div class="contact-info">
@@ -343,8 +413,8 @@
             class="contact-card"
           >
             <i class="fab fa-whatsapp"></i>
-            <p>WhatsApp</p>
-            <span class="contact-data">+91 9963481721</span>
+            <p>Message on WhatsApp</p>
+            <span class="contact-data">Click to chat</span>
           </a>
         </div>
         <div class="contact-info">
