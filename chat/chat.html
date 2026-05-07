@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat | HKTechFolio</title>
+    <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="cloud c1"></div>
+    <div class="cloud c2"></div>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="header-nav">
+                <a href="../index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="../show.html"><i class="fas fa-user"></i> Portfolio</a>
+            </div>
+            <h1>HK.VIRTUAL.ASSISTANT</h1>
+            <div class="status-dot"></div>
+        </div>
+
+        <div class="messages-area" id="chat-messages">
+            <div class="message bot">
+                Hello! I'm Harsha's virtual assistant. How can I help you today?
+            </div>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Type your message here..." autocomplete="off">
+            <button id="send-btn">SEND</button>
+        </div>
+    </div>
+
+    <script>
+        const chatMessages = document.getElementById('chat-messages');
+        const userInput = document.getElementById('user-input');
+        const sendBtn = document.getElementById('send-btn');
+
+        function addMessage(text, sender) {
+            const msgDiv = document.createElement('div');
+            msgDiv.classList.add('message', sender);
+            msgDiv.innerText = text;
+            chatMessages.appendChild(msgDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        sendBtn.addEventListener('click', () => {
+            const text = userInput.value.trim();
+            if (text) {
+                addMessage(text, 'user');
+                userInput.value = '';
+                // Simple auto-reply placeholder
+                setTimeout(() => {
+                    addMessage("Thanks for reaching out! This is a virtual assistant. Harsha will get back to you shortly.", 'bot');
+                }, 1000);
+            }
+        });
+
+        userInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') sendBtn.click();
+        });
+    </script>
+</body>
+</html>

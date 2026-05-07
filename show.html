@@ -1,274 +1,421 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-        <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HQBSH1RN50"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HK.Tech.Folio</title>
+    <link rel="stylesheet" href="show.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="cloud c1"></div>
+    <div class="cloud c2"></div>
 
-    gtag('config', 'G-HQBSH1RN50');
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HKTechFolio</title>
-    <link rel="stylesheet" href="show.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <!-- Header Section -->
+    <header>
+      <div class="logo">HK.TECH.FOLIO</div>
+      <nav>
+        <ul id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certificates</a></li>
+          <li><a href="chat/chat.html">Chat</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="social-nav">
+            <a href="https://github.com/Kanaka-Harsha" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://linkedin.com/in/harsha-kanaka" target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://www.instagram.com/harsha.k.01/" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu-toggle" id="mobile-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
 
-</head>
-<body>
-    
-    <div id="nav">
-        <div id="logo" class="logo">
-            <a href="#">HKTechfolio</a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <span class="tagline">print("Nature Ka Pyaar Aur Logon Ka Yaar")</span>
+        <h1>Harsha Kanakadandila</h1>
+        <p class="hero-description">
+          Cloud Engineer & IoT Architect specializing in building end-to-end
+          ecosystems that move data seamlessly from physical sensors to scalable
+          cloud backends.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn">View My Work</a>
+          <a
+            href="#contact"
+            class="btn"
+            style="margin-left: 15px; background: var(--accent-red)"
+            >Let's Talk</a
+          >
         </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/my.png" alt="Harsha Kanakadandila" />
+      </div>
+    </section>
 
-        <ul >
-            <li class="shiftPage"><a href="index.html">Choice Page</a></li>
-            <li class="shiftPage"><a href="chat.html">Chat</a></li>
-        </ul>
-        <ul id="navLinks">
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#Projects">Projects</a></li>
-            <li><a href="#Contact">Contact</a></li>
-        </ul>
-    </div>
+    <!-- About Section -->
+    <section id="about" class="reveal">
+      <h2 class="section-title">The Architect</h2>
+      <div class="about-container">
+        <p
+          style="
+            font-size: 1.2rem;
+            color: var(--text-main);
+            margin-bottom: 20px;
+          "
+        >
+          I am a Cloud and IoT-focused developer with a passion for designing
+          serverless, event-driven architectures and automated data pipelines.
+        </p>
+        <p style="color: var(--text-dim)">
+          With expertise in AWS and GCP, I bridge the gap between edge devices
+          and the cloud, ensuring reliability and operability at scale. Whether
+          it's architecting MQTT-based communication or building
+          pay-for-what-you-store cloud storage systems, I thrive on solving
+          complex distributed systems problems.
+        </p>
+      </div>
+    </section>
 
-    <!-- This is the home Part -->
-    <div id="Home" class="mainb scroll-animate"> 
-    <div class="spot a"></div>
-    <div class="spot b"></div>
-    <div class="spot c"></div>
-    <div class="spot d"></div>
-    <div class="spot e"></div>
-    <div class="spot f"></div>
-    <div class="spot g"></div>
-    <div class="spot h"></div>
-    <div class="spot i"></div>
-    <div class="spot j"></div>
-        <div class="intro">
-            <h1>Hi All!!</h1>
-            <h2>This is Harsha Kanakadandila</h2>
-            <p>Junior in IoT at KL University | Aspiring AWS Cloud Engineer | 1xAWS and Ongoing AWS SAA | 1x GCP | WSN Builder | Tech Enthusiast | Cricketer | eSports Player</p>
-            <div class="hire">
-                <a href="#Contact">
-                    <button id="hire">Hire Me!!</button>
-                </a>
+    <!-- Skills Section -->
+    <section id="skills" class="reveal">
+      <h2 class="section-title">Technical Arsenal</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <i class="fas fa-cloud"></i>
+            <h3>Cloud & DevOps</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="fab fa-aws"></i> AWS</span>
+            <span class="skill-tag"><i class="fab fa-google"></i> GCP</span>
+            <span class="skill-tag"><i class="fas fa-server"></i> Terraform (IaC)</span>
+            <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
+            <span class="skill-tag"><i class="fab fa-docker"></i> Docker</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <i class="fas fa-microchip"></i>
+            <h3>IoT & Hardware</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="fas fa-memory"></i> ESP32</span>
+            <span class="skill-tag"><i class="fab fa-raspberry-pi"></i> Raspberry Pi</span>
+            <span class="skill-tag"><i class="fas fa-network-wired"></i> MQTT</span>
+            <span class="skill-tag"><i class="fas fa-video"></i> RTSP Protocols</span>
+            <span class="skill-tag"><i class="fas fa-laptop-house"></i> Edge Computing</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <i class="fas fa-code"></i>
+            <h3>Development</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="fab fa-python"></i> Python (Boto3)</span>
+            <span class="skill-tag"><i class="fas fa-c"></i> C / C++</span>
+            <span class="skill-tag"><i class="fas fa-database"></i> SQL</span>
+            <span class="skill-tag"><i class="fas fa-terminal"></i> Bash Scripting</span>
+            <span class="skill-tag"><i class="fab fa-js"></i> HTML, CSS, JS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="reveal">
+      <h2 class="section-title">Engineered Solutions</h2>
+      <div class="grid-container">
+        <div class="project-card">
+          <div
+            class="card-image-carousel"
+            title="Scroll horizontally for more images"
+          >
+            <img src="images/archi.jpg" alt="Pay-As-You-Store Architecture" />
+            <img src="images/proja1.png" alt="Pay-As-You-Store Interface" />
+          </div>
+          <div class="card-content">
+            <h3>H-Drive: Pay-As-You-Store</h3>
+            <ul class="project-points">
+              <li>High costs and inefficiency in traditional fixed-storage models.</li>
+              <li>Architect a scalable, pay-for-what-you-use cloud storage platform.</li>
+              <li>Designed an event-driven architecture with S3, Lambda, DynamoDB, and API Gateway.</li>
+              <li>Delivered a highly available, cost-optimized storage pipeline.</li>
+            </ul>
+            <div class="tech-stack">
+              <span class="tech-tag">AWS S3</span>
+              <span class="tech-tag">AWS Lambda</span>
+              <span class="tech-tag">DynamoDB</span>
+              <span class="tech-tag">API Gateway</span>
             </div>
+            <a href="https://github.com/Kanaka-Harsha/H-Drive" class="btn"
+              ><i class="fab fa-github"></i> Source Code</a
+            >
+          </div>
         </div>
-        
-        <div class="introImg">
-            <img src="images/my.png" alt="my-pic">
+        <div class="project-card">
+          <div
+            class="card-image-carousel"
+            title="Scroll horizontally for more images"
+          >
+            <img src="images/proj1.png" alt="Smart Attendance System" />
+          </div>
+          <div class="card-content">
+            <h3>Smart Attendance System</h3>
+            <ul class="project-points">
+              <li>Manual attendance tracking was prone to errors and time-consuming.</li>
+              <li>Develop an automated, end-to-end IoT tracking system.</li>
+              <li>Built hardware with ESP32 & RFID, and a Node.js/Postgres backend.</li>
+              <li>Eliminated manual entry and improved attendance accuracy drastically.</li>
+            </ul>
+            <div class="tech-stack">
+              <span class="tech-tag">ESP32</span>
+              <span class="tech-tag">RFID</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">IoT</span>
+            </div>
+            <a
+              href="https://github.com/Kanaka-Harsha/RFID-Attandence-System"
+              class="btn"
+              ><i class="fab fa-github"></i> Source Code</a
+            >
+          </div>
         </div>
-    </div>
+        <div class="project-card">
+          <div
+            class="card-image-carousel"
+            title="Scroll horizontally for more images"
+          >
+            <img src="images/project3.png" alt="IoT Ingestion Pipeline" />
+          </div>
+          <div class="card-content">
+            <h3>Smart Traffic Monitoring</h3>
+            <ul class="project-points">
+              <li>Increasing traffic violations due to non-helmet riders.</li>
+              <li>Automate the detection and reporting of traffic violators.</li>
+              <li>Trained a YOLO object detection model to identify non-helmet riders and capture their number plates.</li>
+              <li>Streamlined the process of assigning challans and logging traffic analytics.</li>
+            </ul>
+            <div class="tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">YOLO</span>
+              <span class="tech-tag">Computer Vision</span>
+              <span class="tech-tag">OpenCV</span>
+            </div>
+            <a
+              href="https://github.com/Kanaka-Harsha/Smart-Traffic-Monitoring"
+              class="btn"
+              ><i class="fab fa-github"></i> Source Code</a
+            >
+          </div>
+        </div>
+        <div class="project-card">
+          <div
+            class="card-image-carousel"
+            title="Scroll horizontally for more images"
+          >
+            <img src="images/smart_mirror.jpg" alt="Smart Mirror Interface" />
+          </div>
+          <div class="card-content">
+            <h3>Smart Mirror</h3>
+            <ul class="project-points">
+              <li>Need for a centralized dashboard to view daily information seamlessly.</li>
+              <li>Create an interactive, aesthetically pleasing smart mirror.</li>
+              <li>Programmed a Raspberry Pi to fetch and display weather, calendar, and news behind a two-way mirror.</li>
+              <li>Built a functional, sleek daily assistant that blends into home decor.</li>
+            </ul>
+            <div class="tech-stack">
+              <span class="tech-tag">Raspberry Pi</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">APIs</span>
+              <span class="tech-tag">MagicMirror</span>
+            </div>
+            <a href="#" class="btn"
+              ><i class="fab fa-github"></i> Source Code</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- This is the about Part -->
-    <div id="About" class="mainw scroll-animate"> 
-        <div class="spot ab"></div>
-        <div class="spot bb"></div>
-        <div class="spot cb"></div>
-        <div class="spot db"></div>
-        <div class="spot eb"></div>
-        <div class="spot fb"></div>
-        <div class="spot gb"></div>
-        <div class="spot hb"></div>
-        <div class="spot ib"></div>
-        <div class="spot jb"></div>
-
-        <div class="heading"><h1>About Me</h1></div>
-        <div class="content">
+    <!-- Certifications Section -->
+    <section id="certifications" class="reveal">
+      <h2 class="section-title">Validated Expertise</h2>
+      <div class="grid-container">
+        <div class="cert-card">
+          <div class="card-image">
+            <img src="images/cert1.png" alt="Google Cloud Associate" />
+          </div>
+          <div class="card-content">
+            <h3>Google Cloud Associate</h3>
             <p>
-                I am a self-taught, results-oriented developer dedicated to building scalable, cloud-native ecosystems. I specialize in leveraging AWS services to architect efficient solutions, bridging the gap between physical IoT sensors and responsive web interfaces. My technical foundation is built on Python and Data Structures, extending into serverless computing, data ingestion, and device communication within the AWS cloud.
-                <br>
-                I possess a unique end-to-end system perspective, managing data lifecycles from hardware embedded systems to the cloud and  front-end users. Driven by a competitive mindset honed through championship-level cricket and T-1 BGMI esports, I thrive in  high-pressure environments, utilizing AI tools to optimize workflows and deliver impactful results.
+              Validated proficiency in managing Google Cloud resources and
+              implementing infrastructure solutions.
             </p>
+          </div>
         </div>
-        <div class="linkdin">
-            <h3>To Know More About Me:</h3>
-            <a href="https://www.linkedin.com/in/harsha-kanaka">
-                <button id="hire">Click Here!!</button>
-            </a>
-        </div>  
-    </div>
-
-    <!-- This is the skills Part -->
-    <div id="Skills" class="mainb scroll-animate">
-        <div class="spot a"></div>
-        <div class="spot b"></div>
-        <div class="spot c"></div>
-        <div class="spot d"></div>
-        <div class="spot e"></div>
-        <div class="spot f"></div>
-        <div class="spot g"></div>
-        <div class="spot h"></div>
-        <div class="spot i"></div>
-        <div class="spot j"></div>
-
-        <div class="heading"><h1>My Skills</h1></div>
-        <div class="skillsContent">
-            <div class="Myskills" id="html">HTML<img src="images/html.png"></div>
-            <div class="Myskills" id="css">CSS<img src="images/css.png"></div>
-            <div class="Myskills" id="js">JavaScript<img src="images/js.png"></div>
-            <div class="Myskills" id="rjs">React.Js<img src="images/rcs.png"></div>
-            <div class="Myskills" id="aws">AWS Cloud<img src="images/aws.png"></div>
-            <div class="Myskills" id="mc">Microcontrollers<img src="images/mc.png"></div>
-            <div class="Myskills" id="wsn">Sensor Networks<img src="images/wsn.png"></div>
-            <div class="Myskills" id="iot">IoT<img src="images/iot.png"></div>
-            <div class="Myskills" id="c">C<img src="images/c.png"></div>
+        <div class="cert-card">
+          <div class="card-image">
+            <img src="images/cert2.png" alt="AWS Solutions Architect" />
+          </div>
+          <div class="card-content">
+            <h3>AWS Solutions Architect</h3>
+            <p>
+              Ongoing - Focusing on multi-tier, highly available, and
+              fault-tolerant system designs on AWS.
+            </p>
+          </div>
         </div>
-    </div>
-
-
-    <!-- This is the projects Part -->
-    <div id="Projects" class="mainw scroll-animate">
-        <div class="spot ab"></div>
-        <div class="spot bb"></div>
-        <div class="spot cb"></div>
-        <div class="spot db"></div>
-        <div class="spot eb"></div>
-        <div class="spot fb"></div>
-        <div class="spot gb"></div>
-        <div class="spot hb"></div>
-        <div class="spot ib"></div>
-        <div class="spot jb"></div>
-
-
-        <div class="heading"><h1>My Projects</h1></div>
-        <div class="projectsContent">
-
-            <div class="projectBox">
-                <div class="plText">
-                    <h1>ID Card Attendance System</h1>
-                    <p>I developed an automated ID card attendance system using RFID, an ESP32, and a 
-                        PostgreSQL database. A Node.js server updates attendance in 
-                        real-time, which is then displayed on a web interface built with HTML, 
-                        CSS, and JavaScript.</p>
-                </div>    
-                <img src="images/proj1.png" alt="my-pic">
-            </div>
-
-            <div class="projectBox">
-                <img src="images/proj2.png" alt="my-pic">
-                <div class="plText">
-                    <h1>IoT Based Smart Forest System</h1>
-                    <p>We prototyped an automatic system that monitors forest temperature to detect fires. 
-                        When a fire is found, it activates a light path, guiding nearby wildlife to safety 
-                        shelters. The system proposes using sensor nodes and shelters placed throughout the 
-                        forest.</p>
-                </div>    
-            </div>
-
-            <div class="projectBox">
-                <div class="plText">
-                    <h1>IoT Based Smart Mirror Demo</h1>
-                    <p>We built an IoT smart mirror for restrooms that displays time, 
-                        plus temperature and humidity when a user is present. 
-                        It features smoke/fire alerts, Google Assistant voice control 
-                        for lights, and sends sensor data to ThingSpeak and Adafruit 
-                        clouds for analysis.</p>
-                </div>    
-                <img src="images/proj3.png" alt="my-pic">
-            </div>
-
-            <div class="projectBox">
-                <img src="images/proj4.png" alt="my-pic">
-                <div class="plText">
-                    <h1>MyTechFolio</h1>
-                    <p>I developed my personal portfolio website using HTML, 
-                        CSS, and JavaScript to showcase my projects and skills. 
-                        The site is permanently hosted on Vercel, and I also utilized 
-                        AWS for temporary hosting.</p>
-                </div>    
-            </div>
-
+        <div class="cert-card">
+          <div class="card-image">
+            <img src="images/cert3.png" alt="AWS Cloud Practitioner" />
+          </div>
+          <div class="card-content">
+            <h3>AWS Cloud Practitioner</h3>
+            <p>
+              Foundational understanding of the AWS Cloud platform, security,
+              and compliance.
+            </p>
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
 
+    <!-- Resume Section -->
+    <section id="resume" class="reveal resume-section">
+      <h2 class="section-title">Career Blueprint</h2>
+      <div class="resume-container">
+        <p style="margin-bottom: 20px">
+          Download my latest resume for a detailed view of my professional
+          journey.
+        </p>
+        <a href="#" class="btn" style="font-size: 1.1rem; padding: 15px 30px"
+          ><i class="fas fa-file-download"></i> Download Resume (PDF)</a
+        >
+      </div>
+    </section>
 
-    <!-- This is the contact Part -->
-    <div id="Contact" class="mainb scroll-animate">
-        <div class="spot a"></div>
-        <div class="spot b"></div>
-        <div class="spot c"></div>
-        <div class="spot d"></div>
-        <div class="spot e"></div>
-        <div class="spot f"></div>
-        <div class="spot g"></div>
-        <div class="spot h"></div>
-        <div class="spot i"></div>
-        <div class="spot j"></div>
-
-        <div class="heading"><h1>Contact Me</h1></div>
-        <div class="contactContent">
-            <div id="form">
-                <form>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required><br>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required><br>
-                    <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" required>
-                    <br>
-                    <button>Submit</button>
-                </form>
-            </div>
-            <div id="socialMedia">
-                <h2>Connect with me on:</h2>
-                <div id="contentSM">
-                    <div class="imgTxt">
-                        <h1>LinkedIn</h1>
-                        <a href="https://www.linkedin.com/in/harsha-kanaka" target="_blank">
-                            <img src="images/linkedin.png" alt="LinkedIn">
-                        </a>
-                    </div>
-                    <div class="imgTxt">
-                        <h1>WhatsApp</h1>
-                        <a href="https://wa.me/+919963481721" target="_blank">
-                            <img src="images/whatsapp.png" alt="WhatsApp">
-                        </a>
-                    </div>
-                    <div class="imgTxt">
-                        <h1>GitHub</h1>
-                        <a href="https://github.com/Kanaka-Harsha" target="_blank">
-                            <img src="images/github.png" alt="GitHub">
-                        </a>
-                    </div>
-                    <div class="imgTxt">
-                        <h1>Instagram</h1>
-                        <a href="https://www.instagram.com/harsha.k.01/" target="_blank">
-                            <img src="images/instagram.png" alt="Instagram">
-                        </a>
-                    </div>
-                    <div class="imgTxt">
-                        <h1>Twitter/X</h1>
-                        <a href="https://x.com/aka_Deadshot203" target="_blank">
-                            <img src="images/twitter.png" alt="Twitter">
-                        </a>
-                    </div>
-                    <div class="imgTxt">
-                        <h1>Facebook</h1>
-                        <a href="https://www.facebook.com/harsha.kanakadandila.3" target="_blank">
-                            <img src="images/facebook.png" alt="Facebook">
-                        </a>
-                    </div>
-                </div>
-                <div id="myInfo">
-                    <h2>Or Reach Me Directly At:</h2>
-                    <p>Email:<a href="mailto:harshakanakadandila@gmail.com">harshakanakadandila@gmail.com</a></p>
-                    <p>Phone:<a href="tel:+919963481721">+91 99634 81721</a></p>
-                </div>
-            </div>
-
-            
+    <!-- Contact Section -->
+    <section id="contact" class="reveal">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <a href="mailto:harshakanakadandila@gmail.com" class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <p>Email</p>
+            <span class="contact-data">harshakanakadandila@gmail.com</span>
+          </a>
         </div>
-    </div>
+        <div class="contact-info">
+          <a
+            href="https://wa.me/919963481721"
+            target="_blank"
+            class="contact-card"
+          >
+            <i class="fab fa-whatsapp"></i>
+            <p>WhatsApp</p>
+            <span class="contact-data">+91 9963481721</span>
+          </a>
+        </div>
+        <div class="contact-info">
+          <a
+            href="https://linkedin.com/in/harsha-kanaka"
+            target="_blank"
+            class="contact-card"
+          >
+            <i class="fab fa-linkedin"></i>
+            <p>LinkedIn</p>
+          </a>
+        </div>
+        <div class="contact-info">
+          <a
+            href="https://github.com/Kanaka-Harsha"
+            target="_blank"
+            class="contact-card"
+          >
+            <i class="fab fa-github"></i>
+            <p>GitHub</p>
+          </a>
+        </div>
+        <div class="contact-info">
+          <a
+            href="https://www.instagram.com/harsha.k.01/"
+            target="_blank"
+            class="contact-card"
+          >
+            <i class="fab fa-instagram"></i>
+            <p>Instagram</p>
+          </a>
+        </div>
+      </div>
+    </section>
 
-    <footer>Copyright © | Harsha Kanakadandila | All Rights Reserved</footer>
+    <footer>
+      <p>
+        &copy; 2026 Harsha Kanakadandila. Built with
+        <i class="fas fa-cloud" style="color: var(--accent-red)"></i> and
+        passion.
+      </p>
+    </footer>
 
-    <script src="script.js"></script>
+    <script>
+      // Intersection Observer for Reveal Animations
+      const observerOptions = {
+        threshold: 0.1,
+      };
 
-</body>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+          }
+        });
+      }, observerOptions);
+
+      document
+        .querySelectorAll(".reveal")
+        .forEach((el) => observer.observe(el));
+
+      // Smooth Scroll Header Background
+      window.addEventListener("scroll", () => {
+        const header = document.querySelector("header");
+        if (window.scrollY > 50) {
+          header.style.background = "rgba(5, 5, 5, 0.9)";
+          header.style.padding = "15px 50px";
+        } else {
+          header.style.background = "transparent";
+          header.style.padding = "20px 50px";
+        }
+      });
+
+      // Mobile Menu Toggle
+      const mobileMenu = document.getElementById("mobile-menu");
+      const navLinks = document.getElementById("nav-links");
+
+      mobileMenu.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+        const icon = mobileMenu.querySelector("i");
+        icon.classList.toggle("fa-bars");
+        icon.classList.toggle("fa-times");
+      });
+    </script>
+  </body>
 </html>
