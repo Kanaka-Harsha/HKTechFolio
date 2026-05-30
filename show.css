@@ -441,6 +441,29 @@ section {
     opacity: 1;
 }
 
+/* Live Demo Banner */
+.live-demo-banner {
+    display: block;
+    background: rgba(0, 255, 136, 0.05);
+    color: var(--secondary-glow);
+    text-align: center;
+    padding: 10px;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 255, 136, 0.2);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.live-demo-banner:hover {
+    background: rgba(0, 255, 136, 0.15);
+    color: #fff;
+    box-shadow: inset 0 0 10px rgba(0, 255, 136, 0.2);
+}
+
 /* Project Points */
 .project-points {
     margin-bottom: 15px;
