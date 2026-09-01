@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat | HKTechFolio</title>
+    <title>HK Virtual Assistant | HKTechFolio</title>
     <link rel="stylesheet" href="chat.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -16,50 +16,37 @@
                 <a href="../index.html"><i class="fas fa-home"></i> Home</a>
                 <a href="../show.html"><i class="fas fa-user"></i> Portfolio</a>
             </div>
-            <h1>HK.VIRTUAL.ASSISTANT</h1>
-            <div class="status-dot"></div>
+            <h1><i class="fas fa-robot" style="color: var(--primary-glow); margin-right: 8px;"></i>HK.VIRTUAL.ASSISTANT</h1>
+            <div class="status-indicator">
+                <div class="status-dot"></div>
+                <span class="status-text">ONLINE</span>
+            </div>
         </div>
 
         <div class="messages-area" id="chat-messages">
             <div class="message bot">
-                Hello! I'm Harsha's virtual assistant. How can I help you today?
+                👋 Hello! I'm <b>Harsha's Virtual Assistant</b>.<br><br>
+                Ask me anything about Harsha's <b>Cloud Engineering experience</b>, <b>AWS & IoT Projects</b>, <b>Skills</b>, <b>Certifications</b>, or how to <b>get in touch</b>!
             </div>
         </div>
 
+        <!-- Quick Action Suggestion Chips -->
+        <div class="quick-chips" id="quick-chips">
+            <button class="chip" data-query="Who is Harsha?">👤 About Harsha</button>
+            <button class="chip" data-query="Show me your projects">🚀 Projects</button>
+            <button class="chip" data-query="What are your technical skills?">⚡ Skills</button>
+            <button class="chip" data-query="Tell me about your work experience">💼 Experience</button>
+            <button class="chip" data-query="Show certifications">📜 Certifications</button>
+            <button class="chip" data-query="How can I contact you?">📬 Contact</button>
+            <button class="chip" data-query="Download resume">📄 Resume</button>
+        </div>
+
         <div class="input-area">
-            <input type="text" id="user-input" placeholder="Type your message here..." autocomplete="off">
-            <button id="send-btn">SEND</button>
+            <input type="text" id="user-input" placeholder="Type a message or click a suggestion..." autocomplete="off">
+            <button id="send-btn"><i class="fas fa-paper-plane"></i> SEND</button>
         </div>
     </div>
 
-    <script>
-        const chatMessages = document.getElementById('chat-messages');
-        const userInput = document.getElementById('user-input');
-        const sendBtn = document.getElementById('send-btn');
-
-        function addMessage(text, sender) {
-            const msgDiv = document.createElement('div');
-            msgDiv.classList.add('message', sender);
-            msgDiv.innerText = text;
-            chatMessages.appendChild(msgDiv);
-            chatMessages.scrollTop = chatMessages.scrollHeight;
-        }
-
-        sendBtn.addEventListener('click', () => {
-            const text = userInput.value.trim();
-            if (text) {
-                addMessage(text, 'user');
-                userInput.value = '';
-                // Simple auto-reply placeholder
-                setTimeout(() => {
-                    addMessage("Thanks for reaching out! This is a virtual assistant. HARSHA IS STILL DEVELOPING ME!!! :)", 'bot');
-                }, 1000);
-            }
-        });
-
-        userInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') sendBtn.click();
-        });
-    </script>
+    <script src="chat.js"></script>
 </body>
 </html>
